@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+      lang="ru">
+<th:block layout:fragment="content">
+    <h2> Список предприятий</h2>
+        <div class="card my-3" style="text-align:center; left:20%; width: 60%;">
+                <table class="table table-bordered" th:each="factory : ${factories}">
+                    <tbody>
+                    <tr>
+                        <td th:text="${factory.getName()}" style="font-size:150%"></td>
+                    </tr>
+                    <form th:action="@{'/factory/show/' + ${factory.getId()} }">
+                        <button type="submit" class="btn btn-primary" style="font-size:120%">Посмотреть</button>
+                    </form>
+                    </tbody>
+                </table>
+            </div>
+</th:block>
+</html>

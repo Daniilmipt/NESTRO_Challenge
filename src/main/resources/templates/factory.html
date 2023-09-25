@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}"
+      lang="ru">
+<th:block layout:fragment="content">
+    <h1>
+        <span th:text="${factory.getName()}" th:remove="tag">title</span>
+    </h1>
+    <h2> Список справочников </h2>
+    <div style="text-align:center;">
+    <div class="card my-3"  th:each="attribute : ${attributes}" style="left:20%; width: 60%;font-size:150%">
+        <table class="table table-bordered">
+            <tbody>
+            <tr>
+                <td th:text="${attribute.getName()}" style="font-size:150%"></td>
+            </tr>
+            <tr>
+                <form th:action="@{'/attribute/download/' + ${factory.getId()} + '/' + ${attribute.getId()}}" method="post">
+                    <button type="submit" class="btn btn-primary" style="font-size:80%">Скачать</button>
+                </form>
+            </tr>
+<!--            <form th:action="@{'/attribute/delete/' + ${factoryId} + '/' + ${attribute.getId()}}" method="post">-->
+<!--                <button type="submit" class="btn btn-primary">Удалить</button>-->
+<!--            </form>-->
+            </tbody>
+        </table>
+    </div>
+    <form th:action="@{'/attribute/upload/' + ${factory.getId()} }" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <button type="submit">Добавить Excel файл</button>
+    </form>
+    </div>
+
+</th:block>
+</html>
