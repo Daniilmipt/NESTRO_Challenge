@@ -2,15 +2,16 @@ server:
   port: 8081
 
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/NESTRO
-    username: postgres
-    password: postgres
-  mvc:
-    hiddenmethod:
-      filter:
-        enabled: true
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://81.94.159.154:3306/nestro
+      username: Duke
+      password: ZXCursed17
+    mvc:
+      hiddenmethod:
+        filter:
+          enabled: true
+
 
 
 
