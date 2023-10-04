@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>a0e79f68-b51f-4c6c-b5b8-fa2520898b1a</OriginalElement>
+  <nodes>
+    <node x="301.37254901960796" y="277.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_co2_liquid</node>
+    <node x="1527.71568627451" y="620.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_gas_burn</node>
+    <node x="593.372549019608" y="303.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.all_gas_emissions</node>
+    <node x="1285.372549019608" y="251.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_water_ch4</node>
+    <node x="2042.372549019608" y="251.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_co2_solid</node>
+    <node x="2327.372549019608" y="290.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.acquired_emienergy_emissions</node>
+    <node x="2839.46568627451" y="594.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.torch_fuel_burn</node>
+    <node x="3391.372549019608" y="303.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.torch_fuel_content</node>
+    <node x="1522.372549019608" y="238.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.fugitive_emissions</node>
+    <node x="-223.0" y="48.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_mixed_coef</node>
+    <node x="3125.372549019608" y="303.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_gas_coef</node>
+    <node x="2941.372549019608" y="277.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.transport</node>
+    <node x="3371.0882352941176" y="48.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.mixed_coefs</node>
+    <node x="2704.372549019608" y="225.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_water_n2o</node>
+    <node x="-188.0" y="-153.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_coef</node>
+    <node x="5.372549019607959" y="264.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_co2_mixed</node>
+    <node x="1059.372549019608" y="290.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_n2o</node>
+    <node x="1773.372549019608" y="264.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_fuel_burn</node>
+    <node x="1675.372549019608" y="48.0">a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.torch_fuel_content" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.mixed_coefs" relationship="REFERENCES">
+      <point x="57.75" y="-75.5" />
+      <point x="3564.622549019608" y="194.0" />
+      <point x="3485.5882352941176" y="194.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.fugitive_emissions" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-140.5" />
+      <point x="1637.872549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.transport" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-101.5" />
+      <point x="3023.372549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_gas_coef" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.mixed_coefs" relationship="REFERENCES">
+      <point x="0.0" y="-75.5" />
+      <point x="3248.372549019608" y="194.0" />
+      <point x="3485.5882352941176" y="194.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.torch_fuel_burn" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="-51.0" y="-140.5" />
+      <point x="2890.46568627451" y="553.0" />
+      <point x="2316.872549019608" y="553.0" />
+      <point x="2316.872549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_n2o" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-88.5" />
+      <point x="1162.372549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_co2_liquid" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-101.5" />
+      <point x="437.37254901960796" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.acquired_emienergy_emissions" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-88.5" />
+      <point x="2505.872549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_water_n2o" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-153.5" />
+      <point x="2812.872549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_gas_burn" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_gas_coef" relationship="REFERENCES">
+      <point x="61.75" y="-114.5" />
+      <point x="1712.96568627451" y="563.0" />
+      <point x="3248.372549019608" y="563.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_water_ch4" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-127.5" />
+      <point x="1393.872549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_co2_mixed" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="69.0" y="-114.5" />
+      <point x="212.37254901960796" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_mixed_coef" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_coef" relationship="REFERENCES">
+      <point x="0.0" y="-62.5" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.torch_fuel_content" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="110.71568627450961" y="-75.5" />
+      <point x="3617.5882352941176" y="-9.5" />
+      <point x="1767.872549019608" y="-9.5" />
+      <point x="-0.0" y="-62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_co2_mixed" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_mixed_coef" relationship="REFERENCES">
+      <point x="-69.0" y="-114.5" />
+      <point x="74.37254901960796" y="194.0" />
+      <point x="-81.5" y="194.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_gas_burn" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="-61.75" y="-114.5" />
+      <point x="1589.46568627451" y="573.0" />
+      <point x="-5.127450980392041" y="573.0" />
+      <point x="-5.127450980392041" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.torch_fuel_burn" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.torch_fuel_content" relationship="REFERENCES">
+      <point x="51.0" y="-140.5" />
+      <point x="2992.46568627451" y="573.0" />
+      <point x="3506.872549019608" y="573.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.waste_burn_co2_solid" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-127.5" />
+      <point x="2174.372549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.all_gas_emissions" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-75.5" />
+      <point x="816.372549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+    <edge source="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.stationary_fuel_burn" target="a0e79f68-b51f-4c6c-b5b8-fa2520898b1a.TABLE:nestro.enterprise" relationship="REFERENCES">
+      <point x="0.0" y="-114.5" />
+      <point x="1897.872549019608" y="204.0" />
+      <point x="1767.872549019608" y="204.0" />
+      <point x="0.0" y="62.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.466890843248836" showDependencies="false" x="1709.9999999999995" y="371.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
