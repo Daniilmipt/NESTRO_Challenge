@@ -21,15 +21,6 @@ public class FormulsController {
     @Qualifier("firstJdbcTemplate")
     private JdbcTemplate firstJdbcTemplate;
 
-
-    @GetMapping("/test")
-    public ResponseEntity<Object> uploadFormulsData(){
-        String sql = "SELECT * FROM enterprise";
-        List<Map<String, Object>> result = firstJdbcTemplate.queryForList(sql);
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
-
-
     @PutMapping("/api/formulas/{nameTable}")
     public void addToTable(@PathVariable("nameTable") String nameTable,
                                              @RequestParam(value="energy_cons", required = false)
