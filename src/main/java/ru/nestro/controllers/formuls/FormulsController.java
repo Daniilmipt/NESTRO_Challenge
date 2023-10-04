@@ -224,4 +224,14 @@ public class FormulsController {
         mapResult.put("resultStationaryGasBurn", resultStationaryGasBurn);
         return new ResponseEntity<>(mapResult, HttpStatus.OK);
     }
+
+
+    @GetMapping("/api/enterprise")
+    public ResponseEntity<Object> getEnterprise(){
+        String sql = "select * from enterprise";
+        List<Map<String, Object>> result = firstJdbcTemplate.queryForList(sql);
+        Map<String, List<Map<String, Object>>> mapResult = new HashMap<>();
+        mapResult.put("enterprises", result);
+        return new ResponseEntity<>(mapResult, HttpStatus.OK);
+    }
 }
